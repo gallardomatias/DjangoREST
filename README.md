@@ -14,6 +14,7 @@ https://www.django-rest-framework.org/
 Es un puente, herramienta, servicio o comunicacion entre dos sistemas o software completamente independientes
 que trabaja con formato JSON, que es un formato de texto estandar para datos
 
+pd: Segun mis palabras y entendimiento actual 04-01-2022
 
 Paquetes utlizados
 - pip install ***django-cors-headers***
@@ -44,7 +45,7 @@ pip install -r requirements.txt
 
 *****EXTRA*****
 # Comienzo desde cero 
-## Instalar pip
+
 ``` bash
 # pip es un sistema de gestión de paquetes utilizado para instalar paquetes 
 python -m pip install --upgrade pip

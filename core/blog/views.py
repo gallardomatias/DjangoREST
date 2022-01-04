@@ -1,3 +1,25 @@
-from django.shortcuts import render
+from re import I
+from django.shortcuts import render, get_object_or_404
+from rest_framework import serializers
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-# Create your views here.
+from .models import Post
+from .serializers import PostSerializer
+
+class PostsListView(APIView):
+    def get(self,request,*args,**kwargs):
+        posts =  Post.postobjects.all()[0:5]
+
+        serializer = PostSerializer(posts, many=True)
+
+        return Response(serializer.data)
+
+class PostDetailView(APIView):
+    def get(self,request, post_slug,*args,**kwargs):
+        post = get_object_or_404(Post,slug = post_slug)
+
+        serializer = PostSerializer(post)
+
+        return Response(serializer.data)
+
