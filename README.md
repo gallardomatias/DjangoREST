@@ -4,8 +4,30 @@ building Web APIs
 # Documentación de Django
 https://docs.djangoproject.com/en/4.0/
 
-# Django REST framework
+# Django REST framework - Documentacion Framework
 https://www.django-rest-framework.org/
+
+
+
+¿Que es un servicio Rest?
+
+Es un puente, herramienta, servicio o comunicacion entre dos sistemas o software completamente independientes
+que trabaja con formato JSON, que es un formato de texto estandar para datos
+
+
+Paquetes utlizados
+- pip install ***django-cors-headers***
+    - https://pypi.org/project/django-cors-headers/
+- pip install ***djangorestframework***
+    - https://www.django-rest-framework.org/
+- pip install ***django-environ***
+    - https://pypi.org/project/django-environ/
+
+
+
+#corsheaders
+Permite a quien se le muestra la informacion de nuestra api
+
 # Configuración de compilación
 ## Crear entorno virtual 
 ``` bash
@@ -19,6 +41,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+
+*****EXTRA*****
 # Comienzo desde cero 
 ## Instalar pip
 ``` bash
@@ -63,3 +87,5 @@ pip freeze --local
 #Inspecciona la base de datos y coloca las tablas en models.py (\app\models.py es la ruta donde enviaremos las tablas de la BDD a modelos )
 python manage.py inspectdb > .\app\models.py
 ```
+
+*****FIN*****
